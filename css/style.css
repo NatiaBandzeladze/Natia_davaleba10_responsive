@@ -17,6 +17,9 @@ header img{
     margin-right: 10px;
     line-height: 25px;
 }
+/* .padding-5{
+    padding: 0 5%;
+} */
 .section-banner{
     position: relative;
     background-color: #E6E6E6;
@@ -55,11 +58,14 @@ header img{
 .section-videos h4{
     font-size: 24px;
     color: #fff;
+    padding: 2% 0 0 5%;
+    
+}
+.flex{
+    display: flex;
     
 }
 .videos{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin-top: 3%;
    
@@ -68,7 +74,34 @@ header img{
     margin-right: 5%;
 
 }
+.section-news{
+    background-color: #BDCCD4;
+    width: 100%;
+    height: 450px;
+}
+.section-news h4{
+    font-size: 24px;
+    color: #3D58A6;
+    padding: 2% 0 0 5%;
 
+}
+.news-box{
+    justify-content: space-between;
+    height:300px;
+    padding: 0 3%;
+}
+.news-box div{
+    margin: 10px;
+}
+.news-box: :last-child{
+    margin-right: 0;
+}
+.news-box h5{
+    background-color: #E6E6E6;
+    height: 60px;
+    text-align: center;
+    padding: 15px 0 10px 0
+}
 
 
 
@@ -79,6 +112,9 @@ header img{
 @media screen and (max-width: 1024px){
     .section-videos{
         display: none;
+    }
+    .news-box{
+        flex-wrap: wrap;
     }
 }
 
