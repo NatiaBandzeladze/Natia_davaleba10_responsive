@@ -1,0 +1,86 @@
+body{
+    padding: 20px 0 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    height: 60px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 340px;
+}
+.navbar li{
+    margin-right: 10px;
+    line-height: 25px;
+}
+.section-banner{
+    position: relative;
+    background-color: #E6E6E6;
+    height: 520px;
+    width: 100%;
+    padding: 1% 0 0;
+  
+}
+.container{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 460px;
+    max-width: 90%;
+    margin: auto;
+}
+.section-banner h3{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    max-width: 400px;
+    top: 65%;
+    left: 6%;
+}
+.banner-logo{
+    position: absolute;
+    height: 30px;
+    top: 80%;
+    left: 85%;
+}
+.section-videos{
+    background-color: #363E97;
+    height: 499px;
+}
+.section-videos h4{
+    font-size: 24px;
+    color: #fff;
+    
+}
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+   
+}
+.videos div{
+    margin-right: 5%;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .section-videos{
+        display: none;
+    }
+}
+
+@media screen and (max-width 768px){
+  
