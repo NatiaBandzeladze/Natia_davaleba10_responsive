@@ -2,14 +2,12 @@ body{
     padding: 20px 0 0;
 }
 header {
-    display: flex;
     justify-content: space-between;
 }
 header img{
     height: 60px;
 }
 .navbar ul{
-    display: flex;
     justify-content: flex-end;
     max-width: 340px;
 }
@@ -17,16 +15,22 @@ header img{
     margin-right: 10px;
     line-height: 25px;
 }
-/* .padding-5{
-    padding: 0 5%;
-} */
+.icons img{
+    height: 30px;
+    margin-right: 20px;
+}
+.icons img::after{
+    content:"";
+    border-right: blue;
+    border-width: 5px;
+    
+}
 .section-banner{
     position: relative;
     background-color: #E6E6E6;
     height: 520px;
     width: 100%;
     padding: 1% 0 0;
-  
 }
 .container{
     background-image: url(../img/banner.png);
@@ -59,20 +63,21 @@ header img{
     font-size: 24px;
     color: #fff;
     padding: 2% 0 0 5%;
-    
+}
+.hover-h4:hover{
+    color: red;
+    font-size: 30px;
+    transition: 1s;
 }
 .flex{
     display: flex;
-    
 }
 .videos{
     justify-content: center;
     margin-top: 3%;
-   
 }
 .videos div{
     margin-right: 5%;
-
 }
 .section-news{
     background-color: #BDCCD4;
@@ -83,7 +88,6 @@ header img{
     font-size: 24px;
     color: #3D58A6;
     padding: 2% 0 0 5%;
-
 }
 .news-box{
     justify-content: space-between;
@@ -102,6 +106,9 @@ header img{
     text-align: center;
     padding: 15px 0 10px 0
 }
+/* .hover-h5:hover{ */
+
+}
 .featured{
     background-color: #E6E6E6;
     height: 345px;
@@ -112,7 +119,6 @@ header img{
 }
 .hand-phone{
     justify-content: space-around;
-   
 }
 .hand-phone h5{
     font-size: 22px;
@@ -132,12 +138,7 @@ header img{
     max-width: 355px;
     margin: 15px 10px 0 25px;
 }
-.hand-box{
-    background-color: #F2F2F2;
-    height: 225px;
-    margin:20px;
-}
-.phone-box{
+.phonehand-boxes{
     background-color: #F2F2F2;
     height: 225px;
     margin:20px;
@@ -160,14 +161,14 @@ header img{
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 635px){
     .section-news{
         height: 1270px;
     }
-    .phone-box{
-        height: 370px;
+    .featured{
+        height: 500px;
     }
-    .hand-box{
+    .phonehand-boxes{
         height: 370px;
     }
     .phone{
@@ -177,4 +178,12 @@ header img{
         flex-wrap: wrap;
     }
 }
-  
+
+@media screen and (max-width: 410px){
+    .hand-phone{
+        flex-wrap: wrap;
+    }
+    .featured{
+        height: 900px;
+    }
+}
