@@ -180,6 +180,12 @@ header img{
 }
 
 @media screen and (max-width: 410px){
+    .navbar{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
     .hand-phone{
         flex-wrap: wrap;
     }
